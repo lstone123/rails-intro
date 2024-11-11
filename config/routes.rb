@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # GET localhost:3000/about => pages controller to trigger an action
+  get "/about", to: "pages#about"
+  # HTTP method "/url_path", to: "controller_name#action"
 end
